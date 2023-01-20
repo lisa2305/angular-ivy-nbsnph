@@ -21,13 +21,12 @@ export class LocalitaComponent {
   set listFilter(value: string) {
     this._listFilter = value;
     console.log(value);
-    this.localitaFiltrate = this.datiFiltrati(value)
+    this.localitaFiltrate = this.datiFiltrati(value);
   }
 
-  datiFiltrati(filtratoper:string):Localita[]{
+  datiFiltrati(filtratoper: string): Localita[] {
     filtratoper = filtratoper.toLocaleLowerCase();
-    return 
-
+    return;
   }
 
   Immagine() {
