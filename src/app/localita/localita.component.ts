@@ -11,6 +11,8 @@ export class LocalitaComponent {
   localita = LOCALITA;
   imm: boolean = false;
   private _listFilter: string = '';
+  //array vuoto
+  localitaFiltrate: Localita[] = [];
 
   get listFilter(): string {
     return this._listFilter;
@@ -19,6 +21,13 @@ export class LocalitaComponent {
   set listFilter(value: string) {
     this._listFilter = value;
     console.log(value);
+    this.localitaFiltrate = this.datiFiltrati(value)
+  }
+
+  datiFiltrati(filtratoper:string):Localita[]{
+    filtratoper = filtratoper.toLocaleLowerCase();
+    return 
+
   }
 
   Immagine() {
@@ -32,5 +41,6 @@ export class LocalitaComponent {
 
   ngOnInit() {
     console.log('lista creata');
+    this.listFilter = '';
   }
 }
