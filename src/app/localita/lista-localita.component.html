@@ -1,0 +1,22 @@
+<div>
+  Inserisci filtro <input type="text" [(ngModel)]="listFilter" />
+  <p>Filtrato per: {{ listFilter }}</p>
+</div>
+<button id="bottone" (click)="Immagine()">Mostra immagine</button>
+<p></p>
+<table>
+  <tr>
+    <th>Località</th>
+    <th>Nazione</th>
+    <th>Prezzo</th>
+    <th>Immagini</th>
+  </tr>
+  <tr *ngFor="let l of localita">
+    <td>{{ l.name }}</td>
+    <td>{{ l.nazione }}</td>
+    <td>{{ l.prezzo | currency: 'EUR':'symbol' }}</td>
+    <td>
+      <img *ngIf="imm" [src]="l.immagine" width="300" height="150" />
+    </td>
+  </tr>
+</table>
