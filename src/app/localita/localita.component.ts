@@ -20,4 +20,8 @@ export class LocalitaComponent {
       document.getElementById('bottone').innerHTML = 'Mostra immagini';
     }
   }
+
+  ngOnInit() {
+    console.log('lista creata');
+  }
 }
