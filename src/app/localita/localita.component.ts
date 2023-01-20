@@ -10,7 +10,16 @@ import { LOCALITA } from './lista-localita.component';
 export class LocalitaComponent {
   localita = LOCALITA;
   imm: boolean = false;
-  listFilter: String;
+  private _listFilter: string = '';
+
+  get listFilter(): string {
+    return this._listFilter;
+  }
+
+  set listFilter(value: string) {
+    this._listFilter = value;
+    console.log(value);
+  }
 
   Immagine() {
     this.imm = !this.imm;
