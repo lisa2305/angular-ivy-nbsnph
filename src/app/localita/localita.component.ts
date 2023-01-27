@@ -26,7 +26,9 @@ export class LocalitaComponent {
 
   datiFiltrati(filtratoper: string): Localita[] {
     filtratoper = filtratoper.toLocaleLowerCase();
-    return;
+    return this.localita.filter((loc: Localita) =>
+      loc.nazione.toLocaleLowerCase().includes(filtratoper)
+    );
   }
 
   Immagine() {

@@ -11,7 +11,7 @@
     <th>Prezzo</th>
     <th>Immagini</th>
   </tr>
-  <tr *ngFor="let l of localita">
+  <tr *ngFor="let l of localitaFiltrate">
     <td>{{ l.name }}</td>
     <td>{{ l.nazione }}</td>
     <td>{{ l.prezzo | currency: 'EUR':'symbol' }}</td>

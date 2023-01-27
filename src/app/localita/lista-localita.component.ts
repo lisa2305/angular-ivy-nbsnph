@@ -3,7 +3,7 @@ import { Localita } from '../lista-localita';
 export const LOCALITA: Localita[] = [
   {
     name: 'Lago di Garda',
-    nazione: 'Italia',
+    nazione: 'Spagna',
     immagine:
       'https://www.viaggimust.it/wp-content/uploads/2020/04/lago-di-garda-cosa-vedere-1.jpg',
     prezzo: 158,
