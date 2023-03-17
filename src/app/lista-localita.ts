@@ -3,4 +3,5 @@ export interface Localita {
   nazione: string;
   immagine: string;
   prezzo: number;
+  starRating: number;
 }
