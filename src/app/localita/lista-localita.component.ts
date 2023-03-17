@@ -7,7 +7,7 @@ export const LOCALITA: Localita[] = [
     immagine:
       'https://www.viaggimust.it/wp-content/uploads/2020/04/lago-di-garda-cosa-vedere-1.jpg',
     prezzo: 158,
-    starRating:2.5,
+    starRating: 2.5,
   },
   {
     name: 'Lago di Ledro',
@@ -23,6 +23,6 @@ export const LOCALITA: Localita[] = [
     immagine:
       'https://hotelmicamada.it/attachment/get/up_24_1365434315_826x466.jpg',
     prezzo: 982,
-    starRating:5
+    starRating: 5,
   },
 ];

@@ -16,7 +16,7 @@
     <td>{{ l.name }}</td>
     <td>{{ l.nazione }}</td>
     <td>{{ l.prezzo | currency: 'EUR':'symbol' }}</td>
-    <td><stella [rating]="l.starRating"></stella>td></td>
+    <td><stella [rating]="l.starRating"></stella></td>
     <td>
       <img *ngIf="imm" [src]="l.immagine" width="300" height="150" />
     </td>
